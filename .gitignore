@@ -3,7 +3,6 @@
 *.mp3
 *.mp4
 *.tar.gz
-audio/
-transcripts/
-episodes/
+/audio/
+/transcripts/
 __pycache__/

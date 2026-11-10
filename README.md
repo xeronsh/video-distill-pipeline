@@ -9,10 +9,11 @@ Built for series you actually want to *interrogate* later — course lectures,
 weekly review shows, conference talks, internal training recordings — not for
 one-off video summaries.
 
-> This repository contains the **method only**: pipeline design, hard-won
-> operational lessons, and blank templates. It contains no third-party video
-> content, transcripts, or distilled material. Bring your own corpus, keep
-> your outputs wherever your rights allow.
+> This repository contains the **method** (pipeline design, hard-won
+> operational lessons, blank templates) plus **one worked case study**: the
+> distilled outputs of the validation run, under `case-study/`. It contains
+> no video files, no audio, and no verbatim transcripts. Bring your own
+> corpus, and publish your own outputs wherever your rights allow.
 
 ## Pipeline
 
@@ -75,6 +76,11 @@ A 23-episode, ~20-hour weekly review series (no platform subtitles anywhere):
   every rule cited to episode and timestamp
 - 2 acquisition gaps found, declared, and later closed; 1 distillation gap
   found by inventory audit and closed
+
+The distilled outputs of that run are published as the worked example in
+[`case-study/bit-langlang/`](case-study/bit-langlang/) — the full synthesis
+and all episode notes, with citations intact. Transcripts and audio are not
+included (transcripts are verbatim source text; audio exceeds repo limits).
 
 ## What this is not
 
