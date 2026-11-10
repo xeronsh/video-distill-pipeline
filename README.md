@@ -42,6 +42,7 @@ one-off video summaries.
 | 2 · Transcription | [docs/02-transcription.md](docs/02-transcription.md) | Parallel GPU workers, checkpointing, the reclaim trap, cost accounting |
 | 3 · Distillation | [docs/03-distillation.md](docs/03-distillation.md) | Note structure, citation discipline, gap honesty, synthesis rules |
 | 4 · Provenance | [docs/04-source-map.md](docs/04-source-map.md) | The SOURCE_MAP norm: one row per item, originals over summaries |
+| 5 · Keyframes | [docs/05-keyframes.md](docs/05-keyframes.md) | Seek-and-shoot chart screenshots in a logged-in player; ad/stall/outro failure modes |
 
 Templates live in [`templates/`](templates/); a checkpointed Whisper batch-job
 skeleton lives in [`scripts/`](scripts/).
