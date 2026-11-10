@@ -1,0 +1,9 @@
+# Corpora and outputs never belong in this repo (method only)
+*.m4a
+*.mp3
+*.mp4
+*.tar.gz
+audio/
+transcripts/
+episodes/
+__pycache__/
