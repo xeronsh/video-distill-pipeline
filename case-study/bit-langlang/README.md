@@ -1,4 +1,4 @@
-> **Case-study copy** for [video-distill-pipeline](https://github.com/xeronsh/video-distill-pipeline) — distilled outputs (synthesis + episode notes + source map + keyframe screenshots). Transcripts and audio are **not** published here: transcripts are verbatim source text and audio exceeds GitHub limits; both live in the private knowledge base and its Drive backup.
+> **Case-study copy** for [video-distill-pipeline](https://github.com/xeronsh/video-distill-pipeline) — distilled outputs (synthesis + episode notes + source map + keyframe screenshots + delivery-record audit). Transcripts and audio are **not** published here: transcripts are verbatim source text and audio exceeds GitHub limits; both live in the private knowledge base and its Drive backup. (The delivery-record workbook under `delivery/` IS published: it is the public evidence base for DELIVERY_AUDIT.md.)
 
 # Bit浪浪交易复盘全集 · 蒸馏项目
 
@@ -18,6 +18,7 @@
 - [x] Colab 音频就位（上传 ~2MB/s；Colab 直连 B站 CDN 只有 140KiB/s 且断流，不可用）
 - [x] Colab 转写 **全部完成**：引擎 = openai-whisper large-v3（torch，fp16，condition_on_previous_text=False）。faster-whisper/CTranslate2 在该 Colab 镜像（CUDA 13 + py3.13）有 cublas12/驱动冲突，弃用。四机并发跑完 22 个队列项，转写稿 23 文件全量回收至 `transcripts/`。**全部 Colab 会话已停，验证 Active assignments: 0**；全程 CU 消耗约 9.7（2489.27 → 2479.57）
 - [x] 逐集蒸馏 **全集完成**（`episodes/` 共 24 篇：22 集正片 + 12b 大群 + extra；ep23 短片按设计跳过；ep06 笔记 2026-11-10 盘点时发现漏写并补齐）；STRATEGY.md 约 44.6KB，14 章，规则全标注出处集数
+- [x] 交割单核查（2026-11-10 补）：取得他的完整交割单（4,807 笔，2022-05 → 2024-06，第三方复盘仓公开文件，与 Dune `laster/bitlang` 4,800 行交叉验证一致），清洗表 + 统计在 `delivery/`，核查报告 `DELIVERY_AUDIT.md`，STRATEGY 已加「交割单核查修正」附录。结论：视频期说的与做的为同一系统（纪律全证实），五点修正=频率双层结构、持仓尺度 30 分钟–3 天、杠杆上限执行率与 2024-04 违规窗口、止损分仓无需修正、案例权重 TRB/SOL 降级 WLD/PEOPLE 升级。
 - [x] 关键 K 线截图层（2026-11-10 补）：按用户要求以 **YouTube 原版为优先源**，在 ThinkPad 登录会话的播放器里逐锚点实拍（`frames/`，22 集共 **95 张**），逐张看图筛选后嵌入各集笔记文末「关键截图」节（锚点=笔记时间戳或案例币种定位；剔除广告帧/桌面/片尾 BGM 帧 8 张，EP04 一处锚点因该视频反复冷启停滞未补、保留 4 张）。12b/extra 为 B 站独有材料，未拍。
 - [x] ep07（20231209）已补齐（2026-11-10）：YouTube 原版路线打通（登录完整会话 + PO Token + yt-dlp 外置 curl，方法学见 SOURCE_MAP 文末），音频/转写（1460 段）/笔记/STRATEGY 增补全部落地
 - [x] ep10 已补齐（2026-11-10）：查明本集为大群段（B 站拷贝）+ 小群段（YT 原版 42.3min）两段独立录像，小群段同路线补下转写（822 段），笔记合并为「小群段补遗」，STRATEGY §5/§8/§9/§13 已增补。**至此全集 23 集 + 2 补充全部齐备，无未决缺口**；补缺 Colab 两会话均已停、验证 Active assignments: 0（余额 2477.64 CU）
